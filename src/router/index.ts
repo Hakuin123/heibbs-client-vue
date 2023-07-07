@@ -20,6 +20,17 @@ const routes: Array<RouteRecordRaw> = [
         },
       },
       {
+        path: "/404",
+        name: "404",
+        component: () => import("../views/404.vue"),
+        meta: {
+          Navbar: true,//顶部导航栏
+          Tabbar: false,//底部导航栏
+          Login: false,//是否需要登录
+          title: "404! 啥都木有",
+        },
+      },
+      {
         path: "/login",
         name: "login",
         component: () => import("../views/main/login.vue"),
